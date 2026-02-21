@@ -1,0 +1,507 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "59d243d2ce4aaf69e33f981ba05132ab",
+    "packages": [
+        {
+            "name": "dragonmantank/cron-expression",
+            "version": "v3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dragonmantank/cron-expression.git",
+                "reference": "d61a8a9604ec1f8c3d150d09db6ce98b32675013"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/d61a8a9604ec1f8c3d150d09db6ce98b32675013",
+                "reference": "d61a8a9604ec1f8c3d150d09db6ce98b32675013",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2|^8.3|^8.4|^8.5"
+            },
+            "replace": {
+                "mtdowling/cron-expression": "^1.0"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.4.3",
+                "phpstan/phpstan": "^1.12.32|^2.1.31",
+                "phpunit/phpunit": "^8.5.48|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cron\\": "src/Cron/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Tankersley",
+                    "email": "chris@ctankersley.com",
+                    "homepage": "https://github.com/dragonmantank"
+                }
+            ],
+            "description": "CRON for PHP: Calculate the next or previous run date and determine if a CRON expression is due",
+            "keywords": [
+                "cron",
+                "schedule"
+            ],
+            "support": {
+                "issues": "https://github.com/dragonmantank/cron-expression/issues",
+                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/dragonmantank",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-10-31T18:51:33+00:00"
+        },
+        {
+            "name": "filp/whoops",
+            "version": "2.18.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "d2102955e48b9fd9ab24280a7ad12ed552752c4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/d2102955e48b9fd9ab24280a7ad12ed552752c4d",
+                "reference": "d2102955e48b9fd9ab24280a7ad12ed552752c4d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0",
+                "psr/log": "^1.0.1 || ^2.0 || ^3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^7.5.20 || ^8.5.8 || ^9.3.3",
+                "symfony/var-dumper": "^4.0 || ^5.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
+                "whoops/soap": "Formats errors as SOAP responses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Whoops\\": "src/Whoops/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filipe Dobreira",
+                    "homepage": "https://github.com/filp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php error handling for cool kids",
+            "homepage": "https://filp.github.io/whoops/",
+            "keywords": [
+                "error",
+                "exception",
+                "handling",
+                "library",
+                "throwable",
+                "whoops"
+            ],
+            "support": {
+                "issues": "https://github.com/filp/whoops/issues",
+                "source": "https://github.com/filp/whoops/tree/2.18.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/denis-sokolov",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-08-08T12:00:00+00:00"
+        },
+        {
+            "name": "krzysztofzylka/arrays",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/krzysztofzylka/arrays.git",
+                "reference": "e0caa46aca6aa34869aeb08a0aa74d16c8dad872"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/krzysztofzylka/arrays/zipball/e0caa46aca6aa34869aeb08a0aa74d16c8dad872",
+                "reference": "e0caa46aca6aa34869aeb08a0aa74d16c8dad872",
+                "shasum": ""
+            },
+            "require": {
+                "krzysztofzylka/strings": "^1.0.0",
+                "php": ">=7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Krzysztofzylka\\Arrays\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krzysztof Żyłka",
+                    "email": "krzysztofzylka@yahoo.com"
+                }
+            ],
+            "description": "Array library",
+            "support": {
+                "issues": "https://github.com/krzysztofzylka/arrays/issues",
+                "source": "https://github.com/krzysztofzylka/arrays/tree/1.0.2"
+            },
+            "time": "2024-06-13T17:46:11+00:00"
+        },
+        {
+            "name": "krzysztofzylka/console",
+            "version": "1.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/krzysztofzylka/console.git",
+                "reference": "9d38df7cbac908872333cc3f32713fbfa048b11e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/krzysztofzylka/console/zipball/9d38df7cbac908872333cc3f32713fbfa048b11e",
+                "reference": "9d38df7cbac908872333cc3f32713fbfa048b11e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Krzysztofzylka\\Console\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krzysztof Żyłka",
+                    "email": "krzysztofzylka@yahoo.com"
+                }
+            ],
+            "description": "Console helper library",
+            "support": {
+                "issues": "https://github.com/krzysztofzylka/console/issues",
+                "source": "https://github.com/krzysztofzylka/console/tree/1.0.9"
+            },
+            "time": "2025-07-28T21:21:04+00:00"
+        },
+        {
+            "name": "krzysztofzylka/database-manager",
+            "version": "1.1.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/krzysztofzylka/DatabaseManager.git",
+                "reference": "0437bb89ece721f9fcbf811e88e282b52818a67e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/krzysztofzylka/DatabaseManager/zipball/0437bb89ece721f9fcbf811e88e282b52818a67e",
+                "reference": "0437bb89ece721f9fcbf811e88e282b52818a67e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "krzysztofzylka/arrays": "^1.0.2",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6",
+                "phpunit/phpunit": "^12.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "krzysztofzylka\\DatabaseManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "krzysztofzylka",
+                    "email": "krzysztofzylka@yahoo.com"
+                }
+            ],
+            "description": "Database Manager",
+            "support": {
+                "issues": "https://github.com/krzysztofzylka/DatabaseManager/issues",
+                "source": "https://github.com/krzysztofzylka/DatabaseManager/tree/1.1.15"
+            },
+            "time": "2026-01-24T18:59:37+00:00"
+        },
+        {
+            "name": "krzysztofzylka/env",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/krzysztofzylka/env.git",
+                "reference": "4a10f43c9fc000919fb9d4091109fd5d783a2be3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/krzysztofzylka/env/zipball/4a10f43c9fc000919fb9d4091109fd5d783a2be3",
+                "reference": "4a10f43c9fc000919fb9d4091109fd5d783a2be3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Krzysztofzylka\\Env\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krzysztof Żyłka",
+                    "email": "krzysztofzylka@yahoo.com"
+                }
+            ],
+            "description": "ENV library",
+            "support": {
+                "issues": "https://github.com/krzysztofzylka/env/issues",
+                "source": "https://github.com/krzysztofzylka/env/tree/2.0.5"
+            },
+            "time": "2025-07-04T04:31:42+00:00"
+        },
+        {
+            "name": "krzysztofzylka/file",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/krzysztofzylka/File.git",
+                "reference": "2d72f36b00c85181aecbc1818e2b388972a3fb98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/krzysztofzylka/File/zipball/2d72f36b00c85181aecbc1818e2b388972a3fb98",
+                "reference": "2d72f36b00c85181aecbc1818e2b388972a3fb98",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Krzysztofzylka\\File\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krzysztof Żyłka",
+                    "email": "krzysztofzylka@yahoo.com"
+                }
+            ],
+            "description": "File and directory library",
+            "support": {
+                "issues": "https://github.com/krzysztofzylka/File/issues",
+                "source": "https://github.com/krzysztofzylka/File/tree/1.0.6"
+            },
+            "time": "2025-07-19T20:52:07+00:00"
+        },
+        {
+            "name": "krzysztofzylka/strings",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/krzysztofzylka/strings.git",
+                "reference": "1cff23d8a3570efbca764963eb57fa4ea1475f42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/krzysztofzylka/strings/zipball/1cff23d8a3570efbca764963eb57fa4ea1475f42",
+                "reference": "1cff23d8a3570efbca764963eb57fa4ea1475f42",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Krzysztofzylka\\Strings\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krzysztof Żyłka",
+                    "email": "krzysztofzylka@yahoo.com"
+                }
+            ],
+            "description": "String library",
+            "support": {
+                "issues": "https://github.com/krzysztofzylka/strings/issues",
+                "source": "https://github.com/krzysztofzylka/strings/tree/1.0.0"
+            },
+            "time": "2023-12-09T10:18:49+00:00"
+        },
+        {
+            "name": "nimblephp/framework",
+            "version": "0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NimbleMVC/Framework.git",
+                "reference": "477cf653f4021f19b929fdf754a8882c924353d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NimbleMVC/Framework/zipball/477cf653f4021f19b929fdf754a8882c924353d6",
+                "reference": "477cf653f4021f19b929fdf754a8882c924353d6",
+                "shasum": ""
+            },
+            "require": {
+                "dragonmantank/cron-expression": "^v3.4.0",
+                "filp/whoops": "^2.17",
+                "krzysztofzylka/console": "^1.0.8",
+                "krzysztofzylka/database-manager": "^1.1.3",
+                "krzysztofzylka/env": "^2.0.2",
+                "krzysztofzylka/file": "^1.0.5",
+                "php": ">=8.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.5.3"
+            },
+            "bin": [
+                "bin/nimble"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "NimblePHP\\Framework\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krzysztof Żyłka",
+                    "email": "krzysztofzylka@yahoo.com"
+                }
+            ],
+            "description": "NimblePHP MVC Framework",
+            "support": {
+                "issues": "https://github.com/NimbleMVC/Framework/issues",
+                "source": "https://github.com/NimbleMVC/Framework/tree/0.4.1"
+            },
+            "time": "2026-02-18T21:44:31+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/3.0.2"
+            },
+            "time": "2024-09-11T13:17:53+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

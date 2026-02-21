@@ -1,0 +1,20 @@
+{
+    "name": "nimblephp/secure",
+    "description": "Additional security for nimblephp",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "NimblePHP\\Secure\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Krzysztof Żyłka",
+            "email": "krzysztofzylka@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "nimblephp/framework": ">=0.4.1"
+    }
+}
