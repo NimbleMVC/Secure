@@ -6,13 +6,44 @@ use NimblePHP\Framework\Abstracts\AbstractModel;
 use NimblePHP\Framework\Exception\HiddenException;
 use NimblePHP\Framework\Interfaces\ModelInterface;
 use NimblePHP\Framework\Kernel;
+use NimblePHP\Framework\Middleware\Interfaces\ControllerMiddlewareInterface;
 use NimblePHP\Framework\Middleware\Interfaces\LogMiddlewareInterface;
 use NimblePHP\Framework\Middleware\Interfaces\ModelMiddlewareInterface;
 use NimblePHP\Secure\Services\ArrayService;
 use NimblePHP\Secure\Services\MysqlService;
+use NimblePHP\Secure\Services\RateLimiterService;
+use ReflectionMethod;
 
-class SecureMiddleware implements ModelMiddlewareInterface, LogMiddlewareInterface
+class SecureMiddleware implements ModelMiddlewareInterface, LogMiddlewareInterface, ControllerMiddlewareInterface
 {
+
+    /**
+     * @param array $controllerContext
+     * @return void
+     * @throws HiddenException
+     */
+    public function beforeController(array &$controllerContext): void
+    {
+        /** @var RateLimiterService $rateLimiter */
+        $rateLimiter = Kernel::$serviceContainer->get('secure.rateLimiter');
+
+        if (!$rateLimiter->isEnabled()) {
+            return;
+        }
+
+        $controllerName = (string)($controllerContext['controllerName'] ?? 'unknown');
+        $methodName = (string)($controllerContext['methodName'] ?? 'unknown');
+        $scope = strtolower($controllerName . '::' . $methodName);
+
+        $result = $rateLimiter->hit(Kernel::$serviceContainer->get('kernel.request'), $scope);
+
+        if (!$result['allowed']) {
+            throw new HiddenException(sprintf(
+                'Rate limit exceeded. Retry after %d seconds.',
+                (int)$result['retryAfter']
+            ));
+        }
+    }
 
     /**
      * @param ModelInterface $model
@@ -43,6 +74,25 @@ class SecureMiddleware implements ModelMiddlewareInterface, LogMiddlewareInterfa
      * @return void
      */
     public function processingModelQuery(array &$data): void
+    {
+    }
+
+    /**
+     * @param string $controllerName
+     * @param string $methodName
+     * @param array $params
+     * @return void
+     */
+    public function afterController(string $controllerName, string $methodName, array $params): void
+    {
+    }
+
+    /**
+     * @param ReflectionMethod $reflection
+     * @param object $controller
+     * @return void
+     */
+    public function afterAttributesController(ReflectionMethod $reflection, object $controller): void
     {
     }
 
