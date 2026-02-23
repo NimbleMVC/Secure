@@ -15,6 +15,7 @@
     ],
     "require": {
         "php": ">=8.2",
-        "nimblephp/framework": ">=0.4.1"
+        "nimblephp/framework": ">=0.4.1",
+        "nimblephp/migrations": ">=0.3.0"
     }
 }
