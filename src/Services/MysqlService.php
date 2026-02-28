@@ -102,7 +102,7 @@ class MysqlService
      * @return array
      * @throws DatabaseManagerException
      */
-    private function getTableColumns(string $tableName): array
+    protected function getTableColumns(string $tableName): array
     {
         /** @var Cache $cache */
         $cache = Kernel::$serviceContainer->get('kernel.cache');
